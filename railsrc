@@ -1,3 +1,0 @@
---database=postgresql
---skip-test
--m=https://raw.githubusercontent.com/thoughtbot/suspenders/main/lib/install/web.rb
