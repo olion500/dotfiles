@@ -1,6 +1,4 @@
-# thoughtbot dotfiles
-
-![prompt](http://images.thoughtbot.com/thoughtbot-dotfiles-prompt.png)
+# Backend.config
 
 ## Requirements
 
@@ -12,10 +10,7 @@ Set zsh as your login shell:
 
 Clone onto your laptop:
 
-    git clone git@github.com:thoughtbot/dotfiles.git ~/dotfiles
-
-(Or, [fork and keep your fork
-updated](http://robots.thoughtbot.com/keeping-a-github-fork-updated)).
+    git clone <URL> ~/dotfiles
 
 Install [rcm](https://github.com/thoughtbot/rcm):
 
@@ -214,59 +209,12 @@ configuration:
 - Add trusted binstubs to the `PATH`.
 - Load the ASDF version manager.
 
-[Rails](https://rubyonrails.org)
-
-- Adds [railsrc][] with the following options to integrate with [Suspenders][].
-
-```
---database=postgresql
---skip-test
--m=https://raw.githubusercontent.com/thoughtbot/suspenders/main/lib/install/web.rb
-```
-
-If you want to skip this file altogether, run `rails new my_app --no_rc`.
-
-[railsrc]: https://github.com/rails/rails/blob/7f7f9df8641e35a076fe26bd097f6a1b22cb4e2d/railties/lib/rails/generators/rails/app/USAGE#L5C1-L7
-[Suspenders]: https://github.com/thoughtbot/suspenders
-
 Shell aliases and scripts:
 
 - `...` for quicker navigation to the parent's parent directory.
 - `b` for `bundle`.
-- `g` with no arguments is `git status` and with arguments acts like `git`.
 - `migrate` for `bin/rails db:migrate db:rollback && bin/rails db:migrate db:test:prepare`.
 - `mcd` to make a directory and change into it.
 - `replace foo bar **/*.rb` to find and replace within a given list of files.
 - `tat` to attach to tmux session named the same as the current directory.
 - `v` for `$VISUAL`.
-
-## Thanks
-
-Thank you, [contributors](https://github.com/thoughtbot/dotfiles/contributors)!
-Also, thank you to Corey Haines, Gary Bernhardt, and others for sharing your
-dotfiles and other shell scripts from which we derived inspiration for items
-in this project.
-
-## License
-
-dotfiles is copyright © 2009 thoughtbot. It is free software, and may be
-redistributed under the terms specified in the [`LICENSE`] file.
-
-[`LICENSE`]: /LICENSE
-
-<!-- START /templates/footer.md -->
-## About thoughtbot
-
-![thoughtbot](https://thoughtbot.com/thoughtbot-logo-for-readmes.svg)
-
-This repo is maintained and funded by thoughtbot, inc.
-The names and logos for thoughtbot are trademarks of thoughtbot, inc.
-
-We love open source software!
-See [our other projects][community].
-We are [available for hire][hire].
-
-[community]: https://thoughtbot.com/community?utm_source=github
-[hire]: https://thoughtbot.com/hire-us?utm_source=github
-
-<!-- END /templates/footer.md -->
