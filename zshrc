@@ -34,8 +34,8 @@ _load_settings() {
 }
 _load_settings "$HOME/.zsh/configs"
 
-# zsh theme: powerlevel10k
 source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
+source $(brew --prefix)/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
